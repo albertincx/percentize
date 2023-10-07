@@ -1,0 +1,28 @@
+{
+  "name": "percentize",
+  "version": "1.0.0",
+  "description": "percentage from array of numbers",
+  "main": "./lib/percentize.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albertincx/percentize.git"
+  },
+  "keywords": [
+    "percentage",
+    "percents"
+  ],
+  "author": "albertincx",
+  "license": "ISC",
+  "runkitExampleFilename": "runkit-example.js",
+  "bugs": {
+    "url": "https://github.com/albertincx/percentize/issues"
+  },
+  "homepage": "https://github.com/albertincx/percentize#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
