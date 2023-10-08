@@ -1,7 +1,7 @@
 {
   "name": "percentize",
-  "version": "1.0.6",
-  "description": "percentage from array of numbers",
+  "version": "1.0.9",
+  "description": "Percentize helps to calculate percent from numbers array\nwith minValue to show. Useful for labels. Avoid zero labels",
   "main": "./lib/percentize.js",
   "scripts": {
     "test": "node test/test.js",
