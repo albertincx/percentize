@@ -1,3 +1,2 @@
-import percentize from '../lib/percentize';
-
+import {default as percentize} from '../lib/percentize';
 export { percentize };
