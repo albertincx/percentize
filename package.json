@@ -1,10 +1,11 @@
 {
   "name": "percentize",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "percentage from array of numbers",
   "main": "./lib/percentize.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "test:watch": "node --watch test/test.js"
   },
   "repository": {
     "type": "git",
