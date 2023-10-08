@@ -1,6 +1,6 @@
 {
   "name": "percentize",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "percentage from array of numbers",
   "main": "./lib/percentize.js",
   "scripts": {
