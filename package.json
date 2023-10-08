@@ -1,8 +1,16 @@
 {
   "name": "percentize",
-  "version": "1.0.10",
+  "version": "1.0.11",
+  "author": "albertincx",
+  "license": "MIT",
   "description": "Percentize helps to calculate percent from numbers array\nwith minValue to show. Useful for labels. Avoid zero labels",
+  "keywords": [
+    "percentage",
+    "percents"
+  ],
   "main": "./lib/percentize.js",
+  "module": "./lib/percentize.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "test": "node test/test.js",
     "test:watch": "node --watch test/test.js"
@@ -11,12 +19,6 @@
     "type": "git",
     "url": "git+https://github.com/albertincx/percentize.git"
   },
-  "keywords": [
-    "percentage",
-    "percents"
-  ],
-  "author": "albertincx",
-  "license": "ISC",
   "runkitExampleFilename": "runkit-example.js",
   "bugs": {
     "url": "https://github.com/albertincx/percentize/issues"
