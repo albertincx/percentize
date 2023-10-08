@@ -17,4 +17,14 @@ import percentize from 'percentize';
 
 const percentArray = percentize([1,20,20], 3);
 // [3, 48, 48]
+
+const percentArray = percentize([200, 1, 500], 4);
+// [28, 1, 71]
+
+const percentArray = percentize([200, 1, 500], 1);
+// [3, 48, 48]
+
+const percentArray = percentize([200, 0, 500]);
+// [29, 71]
+
 ```
