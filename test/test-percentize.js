@@ -1,4 +1,4 @@
-var percentize = require('../lib/percentize');
+var percentize = require('../index');
 
 var path = require('path'),
     assert = require('assert'),
