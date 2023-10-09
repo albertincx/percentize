@@ -29,12 +29,13 @@ var group = path.basename(__filename, '.js') + '/';
     {data: [200, 1, 500], min: 4, expected: [27, 1, 72]},
     {data: [200, 1, 500], expected: [28, 1, 71]},
     {data: [200, 0, 500], expected: [29, 71]},
+    {data: [78, 23, 78], expected: [44, 12, 44]},
 ].forEach(function (v) {
     var result = percentize(v.data, v.min);
 
     var msg = '[' + group + ']: output mismatch.\n'
         + 'Saw: ' + inspect(result) + '\n'
         + 'Expected: ' + inspect(v.expected);
-    // console.log(msg);
+
     assert.deepEqual(result, v.expected, msg);
 });

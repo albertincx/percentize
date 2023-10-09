@@ -25,7 +25,28 @@ function indexOf(arr, maximum = true) {
 
     return resIndex;
 }
+function getNext(arr) {
+    let nextIndex = 0;
+    for (let i = 1; i < arr.length; i += 1) {
+        if (arr[i] === arr[0]) {
+            nextIndex = i;
+            break;
+        }
+    }
 
+    return nextIndex;
+}
+function getNotInArr(arr, notInArr) {
+    let index = 0;
+    for (let i = 0; i < arr.length; i += 1) {
+        if (notInArr.indexOf(arr[i]) === -1) {
+            index = i;
+            break;
+        }
+    }
+
+    return index;
+}
 /**
  * @param numbers array of numbers
  * @param minPercent to avoid min values
@@ -78,19 +99,40 @@ function percentize(numbers, minPercent = 1) {
             const plus = Math.floor(diff / sameValues.length);
             const newResult = [...result];
             let changed = false;
-            result.forEach((v, ind) => {
+
+            if (Math.abs(diff) === 1 && !hasMinValue) {
+                const uniqIndex = getNotInArr(result, sameValues);
+                if (uniqIndex !== -1) {
+                    result[uniqIndex] += diff;
+                    return result;
+                }
+            }
+
+            if (Math.abs(diff) === 2) {
+                const nextIndex = getNext(result);
+                result[0] += plus;
+                result[nextIndex] += plus;
+                return result;
+            }
+
+            for (let i = 0; i < result.length; i += 1) {
+                const v = result[i];
+                const ind = i;
                 if (sameValues.includes(v) && newResult[ind] !== 1) {
                     newResult[ind] += plus;
+                    diff -= plus;
                     changed = true;
                 }
-            });
-
+                if (diff === 0) {
+                    break;
+                }
+            }
             if (changed) {
                 return newResult;
             }
         }
         // increase max or min
-        result[indexOf(result, true)] += diff;
+        result[indexOf(result, hasMinValue)] += diff;
     }
 
     return result;

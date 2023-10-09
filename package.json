@@ -1,6 +1,6 @@
 {
   "name": "percentize",
-  "version": "1.0.14",
+  "version": "1.0.18",
   "author": "albertincx",
   "license": "MIT",
   "description": "Percentize helps to calculate percent from numbers array\nwith minValue to show. Useful for labels. Avoid zero labels",
@@ -26,5 +26,9 @@
   "homepage": "https://github.com/albertincx/percentize#readme",
   "directories": {
     "test": "test"
+  },
+  "funding": {
+    "type": "Only star here",
+    "url": "https://github.com/albertincx/percentize"
   }
 }
