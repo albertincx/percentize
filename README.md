@@ -29,3 +29,7 @@ const percentArray = percentize([200, 0, 500]);
 // [29, 71]
 
 ```
+
+# npm link
+
+https://www.npmjs.com/package/percentize
