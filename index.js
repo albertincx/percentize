@@ -25,6 +25,7 @@ function indexOf(arr, maximum = true) {
 
     return resIndex;
 }
+
 function getNext(arr) {
     let nextIndex = 0;
     for (let i = 1; i < arr.length; i += 1) {
@@ -36,6 +37,7 @@ function getNext(arr) {
 
     return nextIndex;
 }
+
 function getNotInArr(arr, notInArr) {
     let index = 0;
     for (let i = 0; i < arr.length; i += 1) {
@@ -47,6 +49,7 @@ function getNotInArr(arr, notInArr) {
 
     return index;
 }
+
 /**
  * @param numbers array of numbers
  * @param minPercent to avoid min values
